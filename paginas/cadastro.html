@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>IFSP Connect - Cadastro de Usuários</title>
+</head>
+<body>
+    <h1>IFSP Connect</h1>
+    <h2>Cadastro de Usuários</h2>
+
+    <form>
+        <p>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+        </p>
+        <p>
+            <label for="email">E-mail institucional:</label>
+            <input type="email" id="email" name="email" placeholder="nome@aluno.ifsp.edu.br">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+        </p>
+        <p>
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso">
+                <option value="">Selecione seu curso</option>
+                <option value="ads">ADS - Análise e Desenvolvimento de Sistemas</option>
+                <option value="tds">TDS - Técnico em Desenvolvimento de Sistemas</option>
+                <option value="ec">EC - Engenharia da Computação</option>
+            </select>
+        </p>
+        <p>
+            <label for="semestre">Semestre:</label>
+            <select id="semestre" name="semestre">
+                <option value="">Selecione seu semestre</option>
+                <option value="1">1º semestre</option>
+                <option value="2">2º semestre</option>
+                <option value="3">3º semestre</option>
+                <option value="4">4º semestre</option>
+                <option value="5">5º semestre</option>
+                <option value="6">6º semestre</option>
+                <option value="7">7º semestre</option>
+                <option value="8">8º semestre</option>
+                <option value="9">9º semestre</option>
+                <option value="10">10º semestre</option>
+            </select>
+        </p>
+        <p>
+            Turno:
+            <br>
+            <input type="radio" id="manha" name="turno" value="manha">
+            <label for="manha">Manhã</label>
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Tarde</label>
+            <input type="radio" id="noite" name="turno" value="noite">
+            <label for="noite">Noite</label>
+        </p>
+        <p>
+            Interesses:
+            <br>
+            <textarea id="interesses" name="interesses" placeholder="Digite seus interesses" rows="4" cols="50"></textarea>
+        </p>
+        <p>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</body>
+</html>
