@@ -12,7 +12,7 @@ header {
     text-align: center;
 }
 
-header h1 {
+#principal {
     color: white;
     font-size: 36px;
     margin: 20px 12px;
@@ -46,8 +46,9 @@ main h1 {
     margin: 24px 20px 12px;
 }
 
-main p {
-    margin: 12px 20px;
+main .card p {
+    line-height: 1.5;
+    margin: 12px 0;
 }
 
 h2 {
@@ -55,13 +56,18 @@ h2 {
     font-size: 24px;
 }
 
-section {
+.card {
     background-color: white;
     border: 2px solid #2f9e41;
     border-radius: 10px;
     box-shadow: 3px 3px 8px gray;
     margin: 20px;
     padding: 20px;
+}
+
+.destaque {
+    background-color: #e2f3e3;
+    border-color: #247a32;
 }
 
 a {
