@@ -5,22 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../imagens/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/estilo.css">
     <title>Cursos</title>
 </head>
 
 <body>
     <header>
-    <nav>
-        <ul>
-            <li><a href="Index10.html">Home</a></li>
-        </ul>
-    </nav>
+        <h1 id="principal">IFSP Connect</h1>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="Index10.html">Home</a></li>
+                <li><a href="cursos.html" aria-current="page">Cursos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+                <li><a href="projetointegrador.html">Projeto Integrador</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="cadastro.html">login</a></li>
+                <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
     <h1>Cursos</h1>
-    <section>
+    <section class="card">
     <table border="1">
         <tr>
             <th colspan="4">Cursos - Instituto Federal de São Paulo - Campus Guarulhos</th>
@@ -136,7 +147,7 @@
     </table>
 
     </section>
-    <section class="catalogo-cursos">
+    <section class="card">
     <h1> Imagens dos cursos</h1>
     <article class="cartao-curso">
     <h2>Licenciatura em Matemática</h2>
