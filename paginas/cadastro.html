@@ -3,108 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFSP Connect - login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <title>IFSP Connect - Login</title>
+    <link rel="icon" type="image/png" href="../imagens/favicon.png">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
-
-   <header>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="Index10.html">Home</a></li>
-            </ul>
-        </nav>
-        <h1>login</h1>
-        <p>Preencha os campos abaixo para realizar seu login.</p>
-    </header>
-    
-<body>
-    <header>
-        <h1 id="principal">IFSP Connect</h1>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="Index10.html">Home</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="professores.html">Professores</a></li>
-                <li><a href="projetointegrador.html">Projeto Integrador</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="cadastro.html" aria-current="page">login</a></li>
-                <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
-            </ul>
-        </nav>
+<body class="pagina-interna">
+<div class="layout-interno">
+    <!-- CSS Grid organiza o cabeçalho, menu, conteúdo, avisos e rodapé. -->
+    <header class="cabecalho-interno">
+        <h1>IFSP Connect</h1>
+        <p>Login</p>
     </header>
 
-    <main>
+    <nav class="menu-interno" aria-label="Menu lateral">
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="Index10.html">Início</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="projetointegrador.html">Projeto Integrador</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cadastro.html" class="ativo" aria-current="page">Login</a></li>
+            <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-interno">
         <h1>Login</h1>
-        <p>Preencha os campos abaixo para realizar seu login.</p>
-        <form>
-            <section class="card">
-                <h2>Dados de acesso</h2>
-                <p>
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" autocomplete="name">
-                </p>
-                <p>
-                    <label for="email">E-mail institucional:</label>
-                    <input type="email" id="email" name="email" placeholder="nome@aluno.ifsp.edu.br" autocomplete="email">
-                </p>
-                <p>
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" autocomplete="current-password">
-                </p>
-            </section>
-
-            <section class="card">
-                <h2>Informações acadêmicas</h2>
-                <p>
-                    <label for="curso">Curso:</label>
-                    <select id="curso" name="curso">
-                        <option value="">Selecione seu curso</option>
-                        <option value="ads">ADS - Análise e Desenvolvimento de Sistemas</option>
-                        <option value="tds">TDS - Técnico em Desenvolvimento de Sistemas</option>
-                        <option value="ec">EC - Engenharia da Computação</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="semestre">Semestre:</label>
-                    <select id="semestre" name="semestre">
-                        <option value="">Selecione seu semestre</option>
-                        <option value="1">1º semestre</option>
-                        <option value="2">2º semestre</option>
-                        <option value="3">3º semestre</option>
-                        <option value="4">4º semestre</option>
-                        <option value="5">5º semestre</option>
-                        <option value="6">6º semestre</option>
-                        <option value="7">7º semestre</option>
-                        <option value="8">8º semestre</option>
-                        <option value="9">9º semestre</option>
-                        <option value="10">10º semestre</option>
-                    </select>
-                </p>
-                <p>Turno:</p>
-                <p>
-                    <input type="radio" id="manha" name="turno" value="manha">
-                    <label for="manha">Manhã</label>
-                    <input type="radio" id="tarde" name="turno" value="tarde">
-                    <label for="tarde">Tarde</label>
-                    <input type="radio" id="noite" name="turno" value="noite">
-                    <label for="noite">Noite</label>
-                </p>
-                <p>
-                    <label for="interesses">Interesses:</label>
-                    <br>
-                    <textarea id="interesses" name="interesses" placeholder="Digite seus interesses" rows="4" cols="50"></textarea>
-                </p>
-            </section>
-
-            <p>
-                <button type="submit">Entrar</button>
-                <button type="reset">Limpar</button>
-            </p>
-        </form>
+        <p>Preencha os campos abaixo para acessar a área de cadastro do IFSP Connect.</p>
+        <section>
+<form class="formulario">
+        <p>
+            <label for="nome">Nome completo:</label>
+            <input class="campo-texto" type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+        </p>
+        <p>
+            <label for="email">E-mail institucional:</label>
+            <input class="campo-texto" type="email" id="email" name="email" placeholder="nome@aluno.ifsp.edu.br">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input class="campo-texto" type="password" id="senha" name="senha">
+        </p>
+        <p>
+            <label for="curso">Curso:</label>
+            <select class="campo-texto" id="curso" name="curso">
+                <option value="">Selecione seu curso</option>
+                <option value="ads">ADS - Análise e Desenvolvimento de Sistemas</option>
+                <option value="tds">TDS - Técnico em Desenvolvimento de Sistemas</option>
+                <option value="ec">EC - Engenharia da Computação</option>
+            </select>
+        </p>
+        <p>
+            <label for="semestre">Semestre:</label>
+            <select class="campo-texto" id="semestre" name="semestre">
+                <option value="">Selecione seu semestre</option>
+                <option value="1">1º semestre</option>
+                <option value="2">2º semestre</option>
+                <option value="3">3º semestre</option>
+                <option value="4">4º semestre</option>
+                <option value="5">5º semestre</option>
+                <option value="6">6º semestre</option>
+                <option value="7">7º semestre</option>
+                <option value="8">8º semestre</option>
+                <option value="9">9º semestre</option>
+                <option value="10">10º semestre</option>
+            </select>
+        </p>
+        <p>
+            Turno:
+            <br>
+            <input type="radio" id="manha" name="turno" value="manha">
+            <label for="manha">Manhã</label>
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Tarde</label>
+            <input type="radio" id="noite" name="turno" value="noite">
+            <label for="noite">Noite</label>
+        </p>
+        <p>
+            Interesses:
+            <br>
+            <textarea class="campo-texto" id="interesses" name="interesses" placeholder="Digite seus interesses" rows="4" cols="50"></textarea>
+        </p>
+        <p class="grupo-botoes">
+            <button type="submit">Cadastrar</button>
+            <button class="botao-limpar" type="reset">Limpar</button>
+        </p>
+    </form>
+        </section>
     </main>
+
+    <aside class="avisos-internos">
+        <h2>Acesso rápido</h2>
+        <p>Explore outras áreas do IFSP Connect.</p>
+        <ul>
+            <li><a href="cursos.html">Conhecer os cursos</a></li>
+            <li><a href="eventos.html">Ver eventos</a></li>
+            <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+        </ul>
+    </aside>
+
+    <footer class="rodape-interno">
+        <p>IFSP Connect - Projeto de Desenvolvimento Front-End</p>
+    </footer>
+</div>
 </body>
 </html>

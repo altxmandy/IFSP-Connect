@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFSP Connect - Cursos</title>
     <link rel="icon" type="image/png" href="../imagens/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/estilo.css">
-    <title>Cursos</title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
-
-<body>
-    <header>
-        <h1 id="principal">IFSP Connect</h1>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="Index10.html">Home</a></li>
-                <li><a href="cursos.html" aria-current="page">Cursos</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="professores.html">Professores</a></li>
-                <li><a href="projetointegrador.html">Projeto Integrador</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="cadastro.html">login</a></li>
-                <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
-            </ul>
-        </nav>
+<body class="pagina-interna">
+<div class="layout-interno">
+    <!-- CSS Grid organiza o cabeçalho, menu, conteúdo, avisos e rodapé. -->
+    <header class="cabecalho-interno">
+        <h1>IFSP Connect</h1>
+        <p>Cursos</p>
     </header>
 
-    <main>
+    <nav class="menu-interno" aria-label="Menu lateral">
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="Index10.html">Início</a></li>
+            <li><a href="cursos.html" class="ativo" aria-current="page">Cursos</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="projetointegrador.html">Projeto Integrador</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cadastro.html">Login</a></li>
+            <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-interno">
     <h1>Cursos</h1>
-    <section class="card">
+    <section class="tabela-cursos">
+    <h2>Lista de cursos</h2>
     <table border="1">
         <tr>
             <th colspan="4">Cursos - Instituto Federal de São Paulo - Campus Guarulhos</th>
@@ -147,8 +148,9 @@
     </table>
 
     </section>
-    <section class="card">
-    <h1> Imagens dos cursos</h1>
+    <section class="catalogo-cursos">
+    <h2>Imagens dos cursos</h2>
+    <div class="lista-cursos">
     <article class="cartao-curso">
     <h2>Licenciatura em Matemática</h2>
     <img src="../imagens/Licenciatura em Matemática.png" alt="Licenciatura em Matemática">
@@ -166,7 +168,7 @@
 
     <article class="cartao-curso">
     <h2> Bacharelado em Engenharia de Computação</h2>
-    <img src="../imagens/Engenharia.png" alt="Bacharelado em Engenharia de Computação" width="700px">
+    <img src="../imagens/Engenharia.png" alt="Bacharelado em Engenharia de Computação">
     </article>
 
     <article class="cartao-curso">
@@ -176,7 +178,7 @@
 
     <article class="cartao-curso">
     <h2> Técnico em Automação Industrial</h2>
-    <img src="../imagens/Técnico em Automação Industrial.jpg" alt="Técnico em Automação Industrial" width="700px">
+    <img src="../imagens/Técnico em Automação Industrial.jpg" alt="Técnico em Automação Industrial">
     </article>
 
     <article class="cartao-curso">
@@ -191,16 +193,31 @@
 
     <article class="cartao-curso">
     <h2> Técnico em Informática Integrado ao Ensino Médio</h2>
-    <img src="../imagens/Técnico em Informática Integrado ao Ensino Médio.png" alt="Técnico em Informática Integrado ao Ensino Médio" Width="700px">    
+    <img src="../imagens/Técnico em Informática Integrado ao Ensino Médio.png" alt="Técnico em Informática Integrado ao Ensino Médio">    
     </article>
 
     <article class="cartao-curso">
     <h2> Técnico em Mecatrônica Integrado ao Ensino Médio</h2>
     <img src="../imagens/Técnico em Mecatrônica Integrado ao Ensino Médio.png" alt="Técnico em Mecatrônica Integrado ao Ensino Médio">
     </article>
-
+    </div>
     </section>
+    
     </main>
-</body>
 
+    <aside class="avisos-internos">
+        <h2>Acesso rápido</h2>
+        <p>Explore outras áreas do IFSP Connect.</p>
+        <ul>
+            <li><a href="cursos.html">Conhecer os cursos</a></li>
+            <li><a href="eventos.html">Ver eventos</a></li>
+            <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+        </ul>
+    </aside>
+
+    <footer class="rodape-interno">
+        <p>IFSP Connect - Projeto de Desenvolvimento Front-End</p>
+    </footer>
+</div>
+</body>
 </html>

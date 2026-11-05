@@ -3,39 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFSP Connect</title>
     <link rel="icon" type="image/png" href="../imagens/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
+
 </head>
 
-<body>
-    <header>
-        <h1 id="principal">IFSP Connect</h1>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="Index10.html" aria-current="page">Home</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="professores.html">Professores</a></li>
-                <li><a href="projetointegrador.html">Projeto Integrador</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="cadastro.html">login</a></li>
-                <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
-            </ul>
-        </nav>
+<body class="pagina-inicial" id="topo">
+    <!-- Missão 12: o Grid organiza as áreas principais da página. -->
+    <div class="layout-grid">
+    <header class="cabecalho-principal">
+        <h1>IFSP Connect</h1>
+        <p>Informações, cursos e atividades do nosso ambiente acadêmico.</p>
     </header>
-    <main>
-    <section class="card" aria-label="Banner do IFSP Connect">
+
+    <!-- Menu lateral organizado com Flexbox. -->
+    <nav class="menu-principal" aria-label="Menu lateral">
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="Index10.html">Home</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="projetointegrador.html">Projeto Integrador</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cadastro.html">Login</a></li>
+            <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-inicial">
+    <!-- Os botões e cartões abaixo utilizam Flexbox. -->
+    <section class="secao-boas-vindas">
+        <h2>Bem-vindo ao IFSP Connect!</h2>
+        <p>Encontre informações sobre cursos, eventos e projetos do IFSP Connect.</p>
+        <div class="botoes-acesso">
+            <a class="botao-acao" href="cursos.html">Explorar cursos</a>
+            <a class="botao-acao" href="eventos.html">Ver eventos</a>
+        </div>
+    </section>
+
+    <section aria-label="Banner do IFSP Connect">
         <a href="https://gru.ifsp.edu.br/" target="_blank">
-            <img src="../imagens/logo-ifsp-connect.png" alt="Banner do IFSP Connect" width="1050px" height="400px">
+            <img src="../imagens/logo-ifsp-connect.png" alt="Banner do IFSP Connect">
         </a>
-        <p>clique no banner para acessar o site do IFSP</p>
+        <p class="descricao-banner">clique no banner para acessar o site do IFSP</p>
     </section>
     
-    <section class="card destaque">
+
+
+
+    <!-- Destaques: cartões organizados com Flexbox. -->
+    <section class="secao-noticias" aria-labelledby="titulo-noticias">
+        <h2 id="titulo-noticias">Destaques do IFSP Connect</h2>
+        <p>Explore os principais espaços do nosso projeto.</p>
+        <div class="lista-noticias">
+            <article class="cartao-noticia">
+                <h3>Conheça os cursos</h3>
+                <p>Veja as opções de cursos e formações apresentadas no site.</p>
+                <a href="cursos.html" class="link-noticia">Ver cursos</a>
+            </article>
+            <article class="cartao-noticia">
+                <h3>Eventos acadêmicos</h3>
+                <p>Confira a página de eventos e as atividades do IFSP Connect.</p>
+                <a href="eventos.html" class="link-noticia">Ver eventos</a>
+            </article>
+            <article class="cartao-noticia">
+                <h3>Projeto Integrador</h3>
+                <p>Saiba mais sobre os projetos e as atividades que foram desenvolvidas.</p>
+                <a href="projetointegrador.html" class="link-noticia">Conhecer o projeto</a>
+            </article>
+        </div>
+    </section>
+
+
+    <section>
+  
     <h2>Projeto de Desenvolvimento Front-End</h2>
     <p><strong>Aluno:</strong> Amanda Novais</p>
     <p><strong>Curso:</strong> Bacharel em Engenharia de Computação</p>
@@ -46,9 +90,10 @@
         permitindo que eu coloque em prática os conceitos estudados.
     </p>
 
+  
     </section>
 
-    <section class="card">
+    <section>
     <aside>
    <h2>Áudio</h2>
 <audio controls>
@@ -58,7 +103,7 @@
 </aside>
     </section>
 
-<section class="card">
+    <section>
     <aside>
     <h2>Vídeo</h2>
     <video controls width="500">
@@ -68,7 +113,7 @@
     </aside>
     </section>
 
-    <section class="card">
+    <section>
     <h2>Sobre o IFSP Connect</h2>
 
     <p>
@@ -98,9 +143,10 @@
         completa, organizada e interativa.
     </p>
 
+    <hr>
     </section>
 
-    <section class="card">
+    <section>
     <h2>Sobre o curso de Bacharel em Engenharia de Computação no IFSP Guarulhos</h2>
     <p>
         O curso de Engenharia da Computação do IFSP Campus Guarulhos prepara seus estudantes para projetar,
@@ -130,9 +176,10 @@
         proporcionadas pela era da informação.
     </p>
 
+    <hr>
     </section>
 
-    <section class="card">
+    <section>
     <table border="1">
 
         <tr>
@@ -237,10 +284,34 @@
     </section>
 
     </main>
-    <br>
-    <footer>
-    <p>Fonte: https://gru.ifsp.edu.br/index.php/superiores/bacharelado-em-engenharia-da-computa%C3%A7%C3%A3o.html</p>
+
+    <!-- Barra lateral de avisos. -->
+    <aside class="barra-avisos" aria-labelledby="titulo-avisos">
+        <h2 id="titulo-avisos">Avisos</h2>
+        <div class="lista-avisos">
+            <div class="aviso">
+                <h3>Eventos</h3>
+                <p>Confira as atividades apresentadas na página de eventos.</p>
+                <a href="eventos.html">Ver eventos</a>
+            </div>
+            <div class="aviso">
+                <h3>Cursos</h3>
+                <p>Conheça as formações disponíveis no catálogo do projeto.</p>
+                <a href="cursos.html">Ver cursos</a>
+            </div>
+            <div class="aviso">
+                <h3>Cadastro</h3>
+                <p>Acesse a página de cadastro de alunos.</p>
+                <a href="cadastroAluno.html">Acessar cadastro</a>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="rodape-principal">
+        <p>IFSP Connect - Projeto de Desenvolvimento Front-End</p>
+        <p>Fonte: <a href="https://gru.ifsp.edu.br/index.php/superiores/bacharelado-em-engenharia-da-computa%C3%A7%C3%A3o.html">IFSP Campus Guarulhos - Engenharia de Computação</a></p>
     </footer>
+    </div>
     <a href="#topo" class="botao-topo" aria-label="Voltar ao topo da página">↑ Voltar ao topo</a>
 </body>
 

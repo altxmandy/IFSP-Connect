@@ -3,58 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Alunos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/estilo.css">
+    <title>IFSP Connect - Cadastro de alunos</title>
+    <link rel="icon" type="image/png" href="../imagens/favicon.png">
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body>
-    <header>
-        <h1 id="principal">IFSP Connect</h1>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="Index10.html">Home</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="professores.html">Professores</a></li>
-                <li><a href="projetointegrador.html">Projeto Integrador</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="cadastro.html">login</a></li>
-                <li><a href="cadastroAluno.html" aria-current="page">Cadastro de alunos</a></li>
-            </ul>
-        </nav>
+<body class="pagina-interna">
+<div class="layout-interno">
+    <!-- CSS Grid organiza o cabeçalho, menu, conteúdo, avisos e rodapé. -->
+    <header class="cabecalho-interno">
+        <h1>IFSP Connect</h1>
+        <p>Cadastro de alunos</p>
     </header>
 
-    <main>
-        <h1>Cadastro de Alunos</h1>
-        <p>Preencha os campos abaixo para realizar seu cadastro.</p>
-        <form>
-            <section class="card">
+    <nav class="menu-interno" aria-label="Menu lateral">
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="Index10.html">Início</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="projetointegrador.html">Projeto Integrador</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cadastro.html">Login</a></li>
+            <li><a href="cadastroAluno.html" class="ativo" aria-current="page">Cadastro de alunos</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-interno">
+        <h1>Cadastro de alunos</h1>
+
+        <form class="formulario">
+            <section>
                 <h2>Dados pessoais</h2>
                 <p>
                     <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" name="nome" autocomplete="name">
+                    <input class="campo-texto" type="text" id="nome" name="nome" autocomplete="name">
                 </p>
                 <p>
                     <label for="cpf">CPF:</label>
-                    <input type="text" id="cpf" name="cpf" autocomplete="off">
+                    <input class="campo-texto" type="text" id="cpf" name="cpf" autocomplete="off">
                 </p>
                 <p>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" autocomplete="email">
+                    <input class="campo-texto" type="email" id="email" name="email" autocomplete="email">
                 </p>
                 <p>
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+                    <input class="campo-texto" type="tel" id="telefone" name="telefone" autocomplete="tel">
                 </p>
             </section>
 
-            <section class="card">
+            <section>
                 <h2>Informações acadêmicas</h2>
                 <p>
                     <label for="curso">Curso:</label>
-                    <select id="curso" name="curso">
+                    <select class="campo-texto" id="curso" name="curso">
                         <option value="">Selecione seu curso</option>
                         <option value="ads">Análise e Desenvolvimento de Sistemas</option>
                         <option value="tds">Técnico em Desenvolvimento de Sistemas</option>
@@ -72,7 +75,7 @@
                 </p>
             </section>
 
-            <section class="card">
+            <section>
                 <h2>Interesses e observações</h2>
                 <p>Selecione seus interesses:</p>
                 <p>
@@ -90,15 +93,31 @@
                 <p>
                     <label for="observacoes">Observações:</label>
                     <br>
-                    <textarea id="observacoes" name="observacoes" rows="5" cols="40"></textarea>
+                    <textarea class="campo-texto" id="observacoes" name="observacoes" rows="5" cols="40"></textarea>
                 </p>
             </section>
 
-            <p>
+            <p class="grupo-botoes">
                 <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
+                <button class="botao-limpar" type="reset">Limpar</button>
             </p>
         </form>
+    
     </main>
+
+    <aside class="avisos-internos">
+        <h2>Acesso rápido</h2>
+        <p>Explore outras áreas do IFSP Connect.</p>
+        <ul>
+            <li><a href="cursos.html">Conhecer os cursos</a></li>
+            <li><a href="eventos.html">Ver eventos</a></li>
+            <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+        </ul>
+    </aside>
+
+    <footer class="rodape-interno">
+        <p>IFSP Connect - Projeto de Desenvolvimento Front-End</p>
+    </footer>
+</div>
 </body>
 </html>

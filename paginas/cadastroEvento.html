@@ -3,73 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscrição - Semana de Tecnologia e Inovação</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/estilo.css">
-       
+    <title>IFSP Connect - Inscrição no evento</title>
+    <link rel="icon" type="image/png" href="../imagens/favicon.png">
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body>
-    <header>
-        <h1 id="principal">IFSP Connect</h1>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="Index10.html">Home</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="professores.html">Professores</a></li>
-                <li><a href="projetointegrador.html">Projeto Integrador</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="cadastro.html">login</a></li>
-                <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
-            </ul>
-        </nav>
+<body class="pagina-interna">
+<div class="layout-interno">
+    <!-- CSS Grid organiza o cabeçalho, menu, conteúdo, avisos e rodapé. -->
+    <header class="cabecalho-interno">
+        <h1>IFSP Connect</h1>
+        <p>Inscrição no evento</p>
     </header>
-    <main>
+
+    <nav class="menu-interno" aria-label="Menu lateral">
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="Index10.html">Início</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="eventos.html" class="ativo" aria-current="page">Eventos</a></li>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="projetointegrador.html">Projeto Integrador</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cadastro.html">Login</a></li>
+            <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-interno">
         <h1>Inscrição no evento</h1>
         <h2>Semana de Tecnologia e Inovação</h2>
         <p>Preencha os dados abaixo para se inscrever no evento do IFSP.</p>
 
-        <form>
-            <section class="card">
-                <h2>Dados pessoais</h2>
-                <p>
-                    <label for="nome">Nome completo*:</label>
-                    <input type="text" id="nome" name="nome" autocomplete="name" required>
-                </p>
-                <p>
-                    <label for="email">E-mail*:</label>
-                    <input type="email" id="email" name="email" autocomplete="email" required>
-                </p>
-                <p>
-                    <label for="prontuario">Prontuário (se estudante do IFSP):</label>
-                    <input type="text" id="prontuario" name="prontuario">
-                </p>
-                <p>
-                    <label for="telefone">Telefone*:</label>
-                    <input type="tel" id="telefone" name="telefone" autocomplete="tel" required>
-                </p>
-            </section>
-
-            <section class="card">
-                <h2>Informações sobre sua instituição</h2>
-                <p>
-                    <label for="curso">Curso ou instituição:</label>
-                    <input type="text" id="curso" name="curso">
-                </p>
-                <p>
-                    <label for="observacoes">Observações ou necessidades de acessibilidade:</label>
-                    <br>
-                    <textarea id="observacoes" name="observacoes" rows="5" cols="40"></textarea>
-                </p>
-            </section>
-
+        <form class="formulario">
             <p>
+                <label for="nome">Nome completo*:</label>
+                <input class="campo-texto" type="text" id="nome" name="nome" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="email">E-mail*:</label>
+                <input class="campo-texto" type="email" id="email" name="email" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="prontuario">Prontuário (se estudante do IFSP):</label>
+                <input class="campo-texto" type="text" id="prontuario" name="prontuario">
+            </p>
+            <p>
+                <label for="curso">Curso ou instituição:</label>
+                <input class="campo-texto" type="text" id="curso" name="curso">
+            </p>
+            <p>
+                <label for="telefone">Telefone*:</label>
+                <input class="campo-texto" type="tel" id="telefone" name="telefone" autocomplete="tel">
+            </p>
+            <p>
+                <label for="observacoes">Observações ou necessidades de acessibilidade:</label>
+                <br>
+                <textarea class="campo-texto" id="observacoes" name="observacoes" rows="5" cols="40"></textarea>
+            </p>
+            <p class="grupo-botoes">
                 <button type="submit">Enviar inscrição</button>
-                <button type="reset">Limpar formulário</button>
+                <button class="botao-limpar" type="reset">Limpar formulário</button>
             </p>
         </form>
+    
     </main>
+
+    <aside class="avisos-internos">
+        <h2>Acesso rápido</h2>
+        <p>Explore outras áreas do IFSP Connect.</p>
+        <ul>
+            <li><a href="cursos.html">Conhecer os cursos</a></li>
+            <li><a href="eventos.html">Ver eventos</a></li>
+            <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+        </ul>
+    </aside>
+
+    <footer class="rodape-interno">
+        <p>IFSP Connect - Projeto de Desenvolvimento Front-End</p>
+    </footer>
+</div>
 </body>
 </html>

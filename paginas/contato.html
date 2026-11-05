@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFSP Connect - Contato</title>
     <link rel="icon" type="image/png" href="../imagens/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/estilo.css">
-    <title>Contato</title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body>
-    <header>
-        <h1 id="principal">IFSP Connect</h1>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="Index10.html">Home</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="professores.html">Professores</a></li>
-                <li><a href="projetointegrador.html">Projeto Integrador</a></li>
-                <li><a href="contato.html" aria-current="page">Contato</a></li>
-                <li><a href="cadastro.html">login</a></li>
-                <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
-            </ul>
-        </nav>
+<body class="pagina-interna">
+<div class="layout-interno">
+    <!-- CSS Grid organiza o cabeçalho, menu, conteúdo, avisos e rodapé. -->
+    <header class="cabecalho-interno">
+        <h1>IFSP Connect</h1>
+        <p>Contato</p>
     </header>
-    <main>
-    <h1>Contato</h1>
+
+    <nav class="menu-interno" aria-label="Menu lateral">
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="Index10.html">Início</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="projetointegrador.html">Projeto Integrador</a></li>
+            <li><a href="contato.html" class="ativo" aria-current="page">Contato</a></li>
+            <li><a href="cadastro.html">Login</a></li>
+            <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-interno">
+        <h1>Contato</h1>
+        <section>
+            <h2>Fale com o IFSP Connect</h2>
+            <p>Esta página está reservada para as informações de contato do projeto.</p>
+            <p>Os dados de contato ainda não foram adicionados.</p>
+            <p class="grupo-botoes"><a class="botao-link" href="Index10.html">Voltar à página inicial</a></p>
+        </section>
+        
     </main>
+
+    <aside class="avisos-internos">
+        <h2>Acesso rápido</h2>
+        <p>Explore outras áreas do IFSP Connect.</p>
+        <ul>
+            <li><a href="cursos.html">Conhecer os cursos</a></li>
+            <li><a href="eventos.html">Ver eventos</a></li>
+            <li><a href="cadastroAluno.html">Cadastro de alunos</a></li>
+        </ul>
+    </aside>
+
+    <footer class="rodape-interno">
+        <p>IFSP Connect - Projeto de Desenvolvimento Front-End</p>
+    </footer>
+</div>
 </body>
 </html>
