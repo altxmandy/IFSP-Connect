@@ -1,7 +1,295 @@
-body{
- font-family: Arial, sans-serif;
-}
-
-h1{
- color:#0d6efd;
-}
+/* Corpo da página */
+body {
+    background-color: #eef7ee;
+    color: #222222;
+    font-family: Arial, sans-serif;
+    }
+    
+    /* Cabeçalho */
+    header {
+    background-color: #2f9e41;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    }
+    
+    /* Título principal */
+    h1 {
+    color: white;
+    font-size: 36px;
+    }
+    
+    /* Menu de navegação */
+    nav {
+    background-color: #247a32;
+    padding: 10px;
+    }
+    
+    nav a {
+    color: white;
+    }
+    
+    /* Títulos das seções */
+    h2 {
+    color: #247a32;
+    font-size: 24px;
+    }
+    
+    /* Cartões de informações */
+    section {
+    background-color: white;
+    border: 2px solid #2f9e41;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px gray;
+    padding: 20px;
+    margin: 20px;
+    }
+    
+    /* Links */
+    a {
+    color: #247a32;
+    }
+    
+    /* Botão principal */
+    button {
+    background-color: #cd191e;
+    color: white;
+    border: 2px solid #cd191e;
+    border-radius: 5px;
+    padding: 10px;
+    }
+    
+    /* Tabela */
+    table {
+    border: 2px solid #2f9e41;
+    background-color: white;
+    }
+    
+    th {
+    background-color: #2f9e41;
+    color: white;
+    border: 1px solid #247a32;
+    padding: 10px;
+    }
+    
+    td {
+    border: 1px solid #2f9e41;
+    padding: 10px;
+    }
+    
+    /* Rodapé */
+    footer {
+    background-color: #247a32;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    }
+    
+    footer p {
+    color: white;
+    }
+    
+    /* Missão: cartões de cursos e eventos */
+    /* A borda e o padding fazem parte da largura e altura definidas. */
+    .cartao-curso, .cartao-evento {
+    box-sizing: border-box;
+    width: 320px;
+    height: 330px;
+    padding: 20px;
+    margin: 12px;
+    border: 2px solid #2f9e41;
+    border-radius: 12px;
+    background-color: white;
+    vertical-align: top;
+    }
+    
+    /* Os cartões de cursos aparecem lado a lado quando houver espaço. */
+    .cartao-curso {
+    display: inline-block;
+    text-align: center;
+    }
+    
+    .cartao-curso h2 {
+    font-size: 20px;
+    }
+    
+    .cartao-curso img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    }
+    
+    /* Ajuste para não ultrapassar a largura de telas pequenas. */
+    @media (max-width: 400px) {
+    .cartao-curso, .cartao-evento {
+    width: 100%;
+    margin: 12px 0;
+    }
+    }
+    
+    /* Títulos fora do cabeçalho devem aparecer sobre o fundo claro. */
+    main > h1, .catalogo-cursos > h1 {
+    color: #247a32;
+    }
+    
+    
+    /* Missão 10 - página inicial: posicionamento e navegação */
+    .pagina-inicial {
+    margin: 0;
+    }
+    
+    /* Cabeçalho fixo, como solicitado na missão. */
+    .pagina-inicial .cabecalho-principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px 0;
+    background-color: #247a32;
+    box-shadow: 0 3px 10px #aaaaaa;
+    z-index: 10;
+    }
+    
+    .pagina-inicial .cabecalho-principal h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    }
+    
+    /* Menu horizontal sem Flexbox: apenas inline-block. */
+    .pagina-inicial .menu-principal {
+    background-color: #247a32;
+    padding: 0 0 12px;
+    text-align: center;
+    }
+    
+    .pagina-inicial .menu-principal ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+    
+    .pagina-inicial .menu-principal li {
+    display: inline-block;
+    margin: 4px 3px;
+    }
+    
+    .pagina-inicial .menu-principal a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 13px;
+    border: 1px solid #73bb7c;
+    border-radius: 8px;
+    background-color: #2f9e41;
+    font-size: 14px;
+    }
+    
+    .pagina-inicial .menu-principal a:hover,
+    .pagina-inicial .menu-principal a:focus {
+    background-color: white;
+    color: #247a32;
+    }
+    
+    /* Espaço para o cabeçalho não cobrir o conteúdo da página. */
+    .pagina-inicial .conteudo-inicial {
+    padding-top: 160px;
+    }
+    
+    .pagina-inicial .conteudo-inicial > section {
+    max-width: 1100px;
+    margin: 20px auto;
+    }
+    
+    .pagina-inicial .conteudo-inicial > section:first-of-type img {
+    max-width: 100%;
+    height: auto;
+    }
+    
+    /* Três cartões lado a lado usando inline-block. */
+    .pagina-inicial .secao-noticias {
+    text-align: center;
+    }
+    
+    .pagina-inicial .lista-noticias {
+    text-align: center;
+    }
+    
+    .pagina-inicial .cartao-noticia {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-width: 230px;
+    min-height: 200px;
+    box-sizing: border-box;
+    margin: 10px 1%;
+    padding: 22px;
+    border: 2px solid #a5d9ad;
+    border-radius: 12px;
+    background-color: #f8fff9;
+    text-align: left;
+    }
+    
+    .pagina-inicial .cartao-noticia h3 {
+    color: #247a32;
+    margin-top: 0;
+    }
+    
+    .pagina-inicial .cartao-noticia p {
+    line-height: 1.5;
+    }
+    
+    .pagina-inicial .link-noticia {
+    display: inline-block;
+    padding: 9px 14px;
+    background-color: #2f9e41;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    }
+    
+    .pagina-inicial .link-noticia:hover {
+    background-color: #247a32;
+    }
+    
+    /* Botão fixo no canto inferior direito. */
+    .pagina-inicial .botao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #cd191e;
+    color: white;
+    text-decoration: none;
+    padding: 13px 17px;
+    border-radius: 25px;
+    box-shadow: 2px 3px 8px #888888;
+    z-index: 20;
+    }
+    
+    .pagina-inicial .botao-topo:hover {
+    background-color: #a91216;
+    }
+    
+    /* O menu pode ocupar mais linhas em telas menores. */
+    @media (max-width: 850px) {
+    .pagina-inicial .conteudo-inicial {
+    padding-top: 220px;
+    }
+    
+    .pagina-inicial .cartao-noticia {
+    width: 90%;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .pagina-inicial .conteudo-inicial {
+    padding-top: 305px;
+    }
+    
+    .pagina-inicial .menu-principal a {
+    padding: 7px 9px;
+    font-size: 12px;
+    }
+    }
