@@ -1,0 +1,3 @@
+﻿[submodule "Arduino-main"]
+    path = Arduino-main
+    url = https://github.com/altxmandy/Arduino.git
